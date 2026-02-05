@@ -18,3 +18,23 @@ This repository contains the core smart contracts for a decentralized NFT market
 2. Run `npm install`.
 3. Configure your `.env` with a private key and RPC provider.
 4. Run `npx hardhat run scripts/deploy.js --network <your-network>`.
+
+
+# Web3 NFT Platform - Frontend
+
+A React-based user interface for connecting wallets and interacting with the NFT Minting platform.
+
+## Features
+* **Wallet Connection:** Integrated with **RainbowKit** and **Wagmi** for a seamless onboarding experience.
+* **Two-Step Transaction:** Handles the complex flow of `approve` (ERC-20) and `mint` (ERC-721) in a single user journey.
+* **Real-time Feedback:** Uses transaction hooks to provide status updates to the user.
+
+## Tech Stack
+* **React.js**
+* **Viem / Wagmi**
+* **RainbowKit**
+
+## Getting Started
+1. `npm install`
+2. Update the contract addresses in `constants.js`.
+3. `npm start`
